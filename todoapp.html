@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Plain-ish To-do List</title>
+    
+    <link rel="stylesheet" href="todoappstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=League+Script&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <h1>Things I need to do:</h1>
+    
+    <ul>
+    </ul>
+    
+    <section class="todoTextFields">
+        &#9702;&nbsp;	
+        <div>
+            <input id="addTodoTextInput" type="text">
+            <button onclick="handlers.addTodo()">Add</button>
+        </div>
+        &#9702;&nbsp;	
+        <div>
+            <input id="changeTodoPositionInput" type="number">
+            <input id="changeTodoTextInput" type="text">  
+            <button onclick="handlers.changeTodo()">Change Todo</button>
+        </div>
+        &#9702;&nbsp;	
+        <div>
+            <input id="toggleCompletedPositionInput" type="number">
+            <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+        </div>
+        &#9702;&nbsp;	
+        <div>
+            <button onclick="handlers.toggleAll()">Toggle All</button>
+        </div>
+        &#9702;&nbsp;	
+    </section>
+    <section class="instructions">
+        * HOW TO USE: To use this Plain-ish Jane To-do List, input and update to-do list items using the provided text fields. The Change Todo and Toggle Completed options have a smaller text field. These smaller text fields are used to select an item in the to-do list by selecting the number in which the item appears on the list. The first list item is considered item 0, so keep that in mind when choosing items to update on your list.
+    </section>
+    <script src="todoappjs.js"></script>
+  </body> 
+</html>
